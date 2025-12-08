@@ -8,8 +8,8 @@ import { useEffect, useState } from "react";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "San's Resume ِِAnalyzer" },
-    { name: "description", content: "Your Career is one step away!" },
+    { title: "San's Resume Analyzer" },
+    { name: "description", content: "Your Career Advice is One Step Away!" },
   ];
 }
 
@@ -87,7 +87,7 @@ export default function Home() {
             <Link
               to="/upload"
               className="primary-button w-fit text-xl font-semibold">
-              Upload & Anlyse your Resume Now!
+              Upload & Analyze your Resume Now!
             </Link>
           </div>
         )}

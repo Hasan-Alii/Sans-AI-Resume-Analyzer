@@ -14,6 +14,13 @@ const Navbar = () => {
     loadFiles();
   }, [files]);
 
+  // TODO: add linkedin api
+  // add dark theme
+  // add cv builder
+  // add prompt library and selections
+  // add account settings 
+  // add subscription plans
+  //
   return (
     <nav className="navbar">
       <Link to="/">
