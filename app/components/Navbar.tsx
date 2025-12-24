@@ -18,7 +18,7 @@ const Navbar = () => {
   // add dark theme
   // add cv builder
   // add prompt library and selections
-  // add account settings 
+  // add account settings
   // add subscription plans
   //
   return (
@@ -27,21 +27,23 @@ const Navbar = () => {
         <p className="text-2xl font-bold text-gradient">San's Resume</p>
       </Link>
 
-      <Link to="/upload" className="primary-button w-fit">
-        Upload Resume
-      </Link>
-
-      {auth.isAuthenticated && (
-        <button className="primary-button w-fit" onClick={auth.signOut}>
-          Sign Out
-        </button>
-      )}
-
-      {files && (
-        <Link to="/wipe" className="primary-button w-fit">
-          Delete Resumes
+      <div className="flex gap-4">
+        <Link to="/upload" className="primary-button w-fit">
+          Upload Resume
         </Link>
-      )}
+
+        {auth.isAuthenticated && (
+          <button className="primary-button w-fit" onClick={auth.signOut}>
+            Sign Out
+          </button>
+        )}
+
+        {files && (
+          <Link to="/wipe" className="primary-button w-fit">
+            Delete Resumes
+          </Link>
+        )}
+      </div>
     </nav>
   );
 };

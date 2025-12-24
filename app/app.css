@@ -21,7 +21,7 @@
 
 html,
 body {
-  @apply bg-white;
+  @apply bg-cover bg-center bg-no-repeat w-full overflow-x-hidden;
 }
 
 main {
